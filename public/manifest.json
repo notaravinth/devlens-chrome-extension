@@ -1,0 +1,22 @@
+
+{
+  "manifest_version": 3,
+  "name": "DevLens",
+  "version": "1.0.0",
+  "description": "Understand JavaScript errors on websites.",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "extension/background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "DevLens"
+  }
+}
